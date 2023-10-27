@@ -1,0 +1,36 @@
+/*CSS RESET*/
+body, div, ul, li, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/*GENERAL*/
+:root {
+  --primary-color: #9356dc;
+}
+
+/*LOADER*/
+.loader {
+  display: none;
+}
+
+/*ICONES*/
+.location-icon {
+  color: #353535;
+}
+
+.steps-icon {
+  color: #7e7e7e;
+}
+
+.store-icon {
+  color: var(--primary-color);
+}
+
+.footer-icon {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
