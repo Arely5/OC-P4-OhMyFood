@@ -1,3 +1,53 @@
+/*GENERAL*/
+html, body {
+  width: 100%;
+}
+
+/*VARIABLES*/
+:root {
+  --primary-color: #9356dc;
+  --background: #F6F6F6;
+  --grey: #353535;
+  --grey2: #EAEAEA;
+}
+
+/*TYPOGRAPHIE*/
+@font-face {
+  font-family: "Shrikhand";
+  src: url("/assets/font/Shrikhand/Shrikhand-Regular.woff2") format("woff2"), url("/assets/font/Shrikhand/Shrikhand-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/font/Roboto/Roboto-Bold.woff2") format("woff2"), url("/assets/font/Roboto/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/font/Roboto/Roboto-Light.woff2") format("woff2"), url("/assets/font/Roboto/Roboto-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/font/Roboto/Roboto-Medium.woff2") format("woff2"), url("/assets/font/Roboto/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/assets/font/Roboto/Roboto-Regular.woff2") format("woff2"), url("/assets/font/Roboto/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*CSS RESET*/
 body, div, ul, li, h1, h2, h3, p {
   margin: 0;
@@ -8,19 +58,9 @@ ul {
   list-style: none;
 }
 
-/*GENERAL*/
-:root {
-  --primary-color: #9356dc;
-}
-
-/*LOADER*/
-.loader {
-  display: none;
-}
-
 /*ICONES*/
 .location-icon {
-  color: #353535;
+  color: var(--grey);
 }
 
 .steps-icon {
@@ -33,4 +73,100 @@ ul {
 
 .footer-icon {
   color: white;
+}
+
+/*HEADER*/
+header .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 63px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+header img {
+  width: 197px;
+  height: 36px;
+}
+header .location {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+  background-color: var(--grey2);
+  align-items: center;
+  justify-content: center;
+}
+header p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: var(--grey);
+}
+
+/*HOME*/
+section {
+  width: 100%;
+}
+
+.title-section {
+  background-color: var(--background);
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-section h1 {
+  width: 73%;
+  height: 68px;
+  margin-top: 39px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.title-section p {
+  width: 84%;
+  height: 46px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+  color: var(--grey);
+}
+.title-section button {
+  width: 58%;
+  height: 50px;
+  text-align: center;
+  margin: 27px 0 57px;
+  background: linear-gradient(#FF79DA -27%, var(--primary-color) 123.93%);
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: white;
+}
+
+.cards-wrapper {
+  width: 100%;
+}
+
+.restaurants a {
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+}
+.card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*LOADER*/
+.loader {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
