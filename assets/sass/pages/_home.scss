@@ -4,9 +4,9 @@ section {
     width: 100%;
 }
 
+/*TITLES-SECTION*/
 .title-section {
     background-color: var(--background);
-    font-family: 'Roboto';
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,6 +45,61 @@ section {
         font-weight: 500;
         line-height: 19px;
         color: white;
+    }
+}
+
+/*SECTION FONCTIONNEMENT*/
+.fonctionnement {
+    justify-content: center;
+    align-items: center;
+    height: 440px;
+
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        padding: 48px 0 26px 20px;
+    }
+
+    .steps-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .step {
+        display: flex;
+        flex-direction: row;
+        gap: 23px;
+        width: 86%;
+        height: 72.38px;
+        align-items: center;
+        background-color: var(--background);
+        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+
+        .number-step {
+            display: flex;
+            background-color: var(--primary-color);
+            height: 24px;
+            width: 24px;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 17px;
+            margin-left: -12px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+        }
     }
 }
 

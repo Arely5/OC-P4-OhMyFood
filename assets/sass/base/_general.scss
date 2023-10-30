@@ -9,10 +9,10 @@ html, body {
     --background: #F6F6F6;
     --grey: #353535;
     --grey2: #EAEAEA;
+    --grey-tint-4: #7e7e7e;
 }
 
 /*TYPOGRAPHIE*/
-body {
     @font-face {
         font-family: 'Shrikhand';
         src: url('/assets/font/Shrikhand/Shrikhand-Regular.woff2') format('woff2'),
@@ -57,4 +57,7 @@ body {
         font-style: normal;
         font-display: swap;
     }
-}
+
+    body {
+        font-family: 'Roboto';
+    }
