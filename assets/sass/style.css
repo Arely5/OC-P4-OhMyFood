@@ -12,6 +12,7 @@ html, body {
   --grey-tint-4: #7e7e7e;
   --green: #99ffd0;
   --green-font: #008766;
+  --white: #fff;
 }
 
 /*TYPOGRAPHIE*/
@@ -108,6 +109,41 @@ header p {
   font-weight: 500;
   line-height: 19px;
   color: var(--grey);
+}
+
+/*FOOTER*/
+footer {
+  background-color: var(--grey);
+  color: var(--white);
+  padding: 22px 25px 22px 25px;
+}
+footer h3 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26.24px;
+  font-style: italic;
+  padding-bottom: 16px;
+}
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+footer li {
+  line-height: 18.75px;
+}
+footer a {
+  text-decoration: none;
+  color: var(--white);
+}
+footer a:visited {
+  color: var(--white);
+}
+footer i {
+  width: 13px;
+  height: 11px;
+  padding-right: 15px;
 }
 
 /*HOME*/
@@ -215,10 +251,10 @@ section {
   padding-left: 4.7%;
 }
 .restaurants h2 {
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 700;
   line-height: 28px;
-  padding: 48px 0 0 0.67%;
+  padding: 48px 0 23px 0.67%;
 }
 
 .cards-wrapper {
@@ -234,13 +270,14 @@ section {
 }
 
 .card {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
 }
 .card .badge {
-  position: relative;
+  position: absolute;
   width: 80px;
   height: 29px;
   top: 42px;
@@ -256,6 +293,7 @@ section {
   height: 174px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 15px 15px 0 0;
 }
 .card .card-content {
   display: flex;
@@ -263,7 +301,8 @@ section {
   align-items: center;
   background-color: white;
   height: 77px;
-  margin-left: 16px;
+  padding-left: 16px;
+  border-radius: 0 0 15px 15px;
 }
 .card .card-content .card-text {
   color: black;

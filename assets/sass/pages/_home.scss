@@ -112,10 +112,10 @@ section {
     padding-left: 4.7%;
 
     h2 {
-        font-size: 24px;
+        font-size: 23px;
         font-weight: 700;
         line-height: 28px;
-        padding: 48px 0 0 0.67%;
+        padding: 48px 0 23px 0.67%;
     }
 }
 
@@ -133,13 +133,14 @@ section {
 }
 
 .card {
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
 
     .badge {
-        position: relative;
+        position: absolute;
         width: 80px;
         height: 29px;
         top: 42px;
@@ -155,6 +156,7 @@ section {
     .img-restaurants {
         height: 174px;
         object-fit: cover;
+        border-radius: 15px 15px 0 0;
     }
 
     .card-content {
@@ -163,7 +165,8 @@ section {
         align-items: center;
         background-color: white;
         height: 77px;
-        margin-left: 16px;
+        padding-left: 16px;
+        border-radius: 0 0 15px 15px;
 
         .card-text {
             color: black;

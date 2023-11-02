@@ -1,0 +1,40 @@
+/*FOOTER*/
+footer {
+    background-color: var(--grey);
+    color: var(--white);
+    padding: 22px 25px 22px 25px;
+
+    h3 {
+        font-family: 'Shrikhand';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26.24px;
+        font-style: italic;
+        padding-bottom: 16px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    li {
+        line-height: 18.75px;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    a:visited {
+        color: var(--white);
+    }
+
+    i {
+        width: 13px;
+        height: 11px;
+        padding-right: 15px;
+    }
+}
