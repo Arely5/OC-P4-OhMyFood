@@ -82,6 +82,10 @@ ul {
   color: white;
 }
 
+.fa-arrow-left {
+  color: var(--grey);
+}
+
 /*HEADER*/
 header .img-container {
   display: flex;
@@ -90,7 +94,7 @@ header .img-container {
   height: 63px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
-header img {
+header .logo-header {
   width: 197px;
   height: 36px;
 }
