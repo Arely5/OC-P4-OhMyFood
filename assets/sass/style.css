@@ -84,6 +84,14 @@ ul {
 
 .fa-arrow-left {
   color: var(--grey);
+  font-size: 20px;
+}
+
+.heart {
+  width: 22px;
+  height: 21px;
+  border: solid black 1px;
+  border-radius: 50px;
 }
 
 /*HEADER*/
@@ -95,8 +103,10 @@ header .img-container {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 header .logo-header {
-  width: 197px;
+  width: 162px;
   height: 36px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 header .location {
   height: 50px;
@@ -113,6 +123,20 @@ header p {
   font-weight: 500;
   line-height: 19px;
   color: var(--grey);
+}
+header .go-back {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  width: 30px;
+  height: 30px;
+}
+header .img-header {
+  width: 100%;
+  min-height: 275px;
+  max-height: 383px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*FOOTER*/
@@ -331,4 +355,36 @@ section {
 /*LOADER*/
 .loader {
   display: none;
+}
+
+/* MENUS */
+.menu-wraper {
+  display: flex;
+  justify-content: center;
+}
+.menu-wraper .menu {
+  position: relative;
+  top: -55px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1055px;
+  border-radius: 25px 25px 0 0;
+  background-color: var(--background);
+  align-items: center;
+  padding-top: 35px;
+}
+.menu-wraper .menu .menu-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 307px;
+  font-family: Shrikhand;
+}
+.menu-wraper .menu .menu-title h1 {
+  font-family: "Shrikhand";
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 41px;
 }/*# sourceMappingURL=style.css.map */

@@ -9,8 +9,9 @@ header {
     }
 
     .logo-header {
-        width: 197px;
+        width: 162px;
         height: 36px;
+        object-fit: contain;
     }
 
     .location {
@@ -29,6 +30,21 @@ header {
         font-weight: 500;
         line-height: 19px;
         color: var(--grey);
+    }
+
+    .go-back {
+        position: absolute;
+        top: 17px;
+        left: 17px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .img-header {
+        width: 100%;
+        min-height: 275px;
+        max-height: 383px;
+        object-fit: cover;
     }
 }
 
