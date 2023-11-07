@@ -10,7 +10,7 @@ html, body {
   --grey: #353535;
   --grey2: #EAEAEA;
   --grey-tint-4: #7e7e7e;
-  --green: #99ffd0;
+  --green: #99E2d0;
   --green-font: #008766;
   --white: #fff;
 }
@@ -345,12 +345,6 @@ section {
   font-weight: 300;
   line-height: 20px;
 }
-.card .card-content .heart {
-  width: 22px;
-  height: 21px;
-  border: solid black 1px;
-  border-radius: 50px;
-}
 
 /*LOADER*/
 .loader {
@@ -387,4 +381,53 @@ section {
   font-style: italic;
   font-weight: 400;
   line-height: 41px;
+}
+.menu-wraper .menu .menu-element {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 349px;
+  max-width: 634px;
+  height: 270px;
+  font-family: "Roboto";
+}
+.menu-wraper .menu .menu-element .titre-niveau {
+  position: relative;
+  height: 27px;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 19px;
+}
+.menu-wraper .menu .menu-element .titre-niveau::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 27px;
+  border-bottom: solid 3px var(--green);
+}
+.menu-wraper .menu .menu-element .carte-plat {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 69px;
+  border-radius: 15.04px;
+  background-color: var(--white);
+  padding: 15px;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+}
+.menu-wraper .menu .menu-element .carte-plat .carte-plat-infos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+}
+.menu-wraper .menu .menu-element .carte-plat .price {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
 }/*# sourceMappingURL=style.css.map */

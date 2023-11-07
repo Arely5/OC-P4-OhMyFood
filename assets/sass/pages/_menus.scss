@@ -30,5 +30,59 @@
                 line-height: 41px;
             }
         }
+
+        .menu-element {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            min-width: 349px;
+            max-width: 634px;
+            height: 270px;
+            font-family: 'Roboto';
+
+            .titre-niveau {
+                position: relative;
+                height: 27px;
+                font-size: 16px;
+                font-weight: 300;
+                text-transform: uppercase;
+                line-height: 19px;
+            }
+            .titre-niveau::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 40px;
+                height: 27px;
+                border-bottom: solid 3px var(--green);
+            }
+
+            .carte-plat {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                height: 69px;
+                border-radius: 15.04px;
+                background-color: var(--white);
+                padding: 15px;
+                box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+
+                .carte-plat-infos {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    font-size: 15px;
+                    font-weight: 300;
+                    line-height: 18px;
+                }
+                
+                .price {
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 18px;
+                }
+            }
+        }
     }
 }
