@@ -58,28 +58,62 @@
                 border-bottom: solid 3px var(--green);
             }
 
-            .carte-plat {
+            .card-wraper{
+                position: relative;
                 display: flex;
-                flex-direction: column;
-                gap: 5px;
-                border-radius: 15.04px;
-                background-color: var(--white);
-                padding: 15px;
-                box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+                flex-direction: row;
 
-                .carte-plat-infos {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    font-size: 15px;
-                    font-weight: 300;
-                    line-height: 18px;
+                &:hover .check {
+                    visibility: visible;
+                    width: 59px;
                 }
-                
-                .price {
-                    font-size: 15px;
-                    font-weight: 700;
-                    line-height: 18px;
+
+                &:hover .carte-plat {
+                    padding-right: 74px;
+                }
+
+                .carte-plat {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 5px;
+                    width: 100%;
+                    height: 69px;
+                    border-radius: 15.04px;
+                    background-color: var(--white);
+                    padding: 0 15px 0 15px;
+                    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+                    transition: padding-right 0.5s ease;
+
+                    .carte-plat-infos {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        font-size: 15px;
+                        font-weight: 300;
+                        line-height: 18px;
+                    }
+                    
+                    .price {
+                        font-size: 15px;
+                        font-weight: 700;
+                        line-height: 18px;
+                    }
+                }
+
+                .check {
+                    visibility: hidden;
+                    position: absolute;
+                    right: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: var(--green);
+                    border-radius: 0 15.04px 15.04px 0;
+                    width: 0;
+                    height: 69px;
+                    z-index: 5;
+                    transition: width 0.5s ease;
                 }
             }
         }

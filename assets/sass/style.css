@@ -135,11 +135,15 @@ ul {
 }
 
 .fa-heart {
-  color: transparent;
   font-size: 22px;
   -webkit-background-clip: text;
           background-clip: text;
-  background-color: black;
+  background-color: var(--pink-gradient);
+}
+
+.fa-circle-check {
+  color: white;
+  font-size: 20px;
 }
 
 /*HEADER*/
@@ -397,6 +401,7 @@ section {
 .loader {
   position: fixed;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -405,22 +410,19 @@ section {
   z-index: 5;
   animation: disappearing 4s forwards;
 }
-.loader .loader-logo {
+.loader .loader-text {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 150px;
   height: 150px;
+  color: white;
+  font-family: "Roboto";
   background-image: var(--pink-gradient);
   background-clip: padding-box, border-box;
   border-radius: 75px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   animation: pulse 2s infinite;
-}
-.loader .loader-logo img {
-  width: 70%;
-  height: 20px;
-  filter: invert(100);
 }
 
 /* MENUS */
@@ -480,16 +482,32 @@ section {
   height: 27px;
   border-bottom: solid 3px var(--green);
 }
-.menu-wraper .menu .menu-element .carte-plat {
+.menu-wraper .menu .menu-element .card-wraper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.menu-wraper .menu .menu-element .card-wraper:hover .check {
+  visibility: visible;
+  width: 59px;
+}
+.menu-wraper .menu .menu-element .card-wraper:hover .carte-plat {
+  padding-right: 74px;
+}
+.menu-wraper .menu .menu-element .card-wraper .carte-plat {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 5px;
+  width: 100%;
+  height: 69px;
   border-radius: 15.04px;
   background-color: var(--white);
-  padding: 15px;
+  padding: 0 15px 0 15px;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+  transition: padding-right 0.5s ease;
 }
-.menu-wraper .menu .menu-element .carte-plat .carte-plat-infos {
+.menu-wraper .menu .menu-element .card-wraper .carte-plat .carte-plat-infos {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -497,10 +515,24 @@ section {
   font-weight: 300;
   line-height: 18px;
 }
-.menu-wraper .menu .menu-element .carte-plat .price {
+.menu-wraper .menu .menu-element .card-wraper .carte-plat .price {
   font-size: 15px;
   font-weight: 700;
   line-height: 18px;
+}
+.menu-wraper .menu .menu-element .card-wraper .check {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green);
+  border-radius: 0 15.04px 15.04px 0;
+  width: 0;
+  height: 69px;
+  z-index: 5;
+  transition: width 0.5s ease;
 }
 .menu-wraper .menu .btn {
   margin: 0 0 40px 0;

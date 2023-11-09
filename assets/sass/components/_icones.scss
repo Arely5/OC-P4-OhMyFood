@@ -2,23 +2,31 @@
 .location-icon {
     color: var(--grey);
 }
+
 .steps-icon {
     color: var(--grey-tint-4)
 }
+
 .store-icon {
     color: var(--primary-color);
 }
+
 .footer-icon {
     color: white;
 }
+
 .fa-arrow-left {
     color: var(--grey);
     font-size: 20px;
 }
 
 .fa-heart {
-    color: transparent;
     font-size: 22px;
     background-clip: text;
-    background-color: black;
+    background-color: var(--pink-gradient);
+}
+
+.fa-circle-check {
+    color: white;
+    font-size: 20px;
 }
