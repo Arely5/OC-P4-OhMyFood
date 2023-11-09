@@ -1,0 +1,30 @@
+/* ANIMATIONS */
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* echelle initiale */
+    }
+    50% {
+        transform: scale(1.2); /* echelle plus grande */
+    }
+    100% {
+        transform: scale(1); /* retour à l'echelle initiale */
+    }
+}
+
+@keyframes disappearing {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1);
+        visibility: hidden;
+    }
+    100% {
+        transform: scale(0);
+        visibility: hidden;
+    }
+}
