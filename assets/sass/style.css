@@ -97,7 +97,7 @@ ul {
 }
 /* BUTTONS */
 .btn {
-  width: 58%;
+  width: 186px;
   height: 50px;
   text-align: center;
   margin: 27px 0 57px;
@@ -110,6 +110,19 @@ ul {
   font-weight: 500;
   line-height: 19px;
   color: white;
+  text-decoration: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  filter: brightness(110%);
+}
+
+.first-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 218px;
 }
 
 /*ICONES*/
@@ -408,7 +421,7 @@ section {
   height: 100%;
   background-color: var(--grey2);
   z-index: 5;
-  animation: disappearing 4s forwards;
+  animation: disappearing 3s forwards;
 }
 .loader .loader-text {
   display: flex;
