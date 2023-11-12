@@ -159,6 +159,10 @@ ul {
   font-size: 20px;
 }
 
+.footer-icon {
+  font-size: 13px;
+}
+
 /*HEADER*/
 header .img-container {
   display: flex;
@@ -222,20 +226,28 @@ footer .footer-links {
   flex-direction: column;
   gap: 7px;
 }
-footer li {
-  line-height: 18.75px;
+footer .footer-links li {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 19px;
+}
+footer .footer-links .lien-action {
+  display: flex;
+  gap: 10.08px;
+  font-weight: 500;
+  width: 190px;
+}
+footer .footer-links .lien-info {
+  font-weight: 400;
+  width: 130px;
 }
 footer a {
   text-decoration: none;
+  font-style: normal;
   color: var(--white);
 }
 footer a:visited {
   color: var(--white);
-}
-footer i {
-  width: 13px;
-  height: 11px;
-  padding-right: 15px;
 }
 
 /*HOME*/
@@ -268,20 +280,6 @@ section {
   font-weight: 300;
   line-height: 21px;
   color: var(--grey);
-}
-.title-section button {
-  width: 58%;
-  height: 50px;
-  text-align: center;
-  margin: 27px 0 57px;
-  background: linear-gradient(#FF79DA -27%, var(--primary-color) 123.93%);
-  border-radius: 25px;
-  border: none;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 19px;
-  color: white;
 }
 
 /*SECTION FONCTIONNEMENT*/
@@ -549,4 +547,47 @@ section {
 }
 .menu-wraper .menu .btn {
   margin: 0 0 40px 0;
+}
+
+/*RESPONSIVE*/
+@media screen and (min-width: 1280px) {
+  .title-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .title-section h1 {
+    width: 645px;
+    font-size: 40px;
+    line-height: 46.88px;
+  }
+  .title-section .first-btn {
+    margin: 0;
+  }
+  .fonctionnement {
+    height: 228.38px;
+  }
+  .fonctionnement .steps-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: end;
+    gap: 16px;
+    height: 114px;
+    padding: 0 25px 0 25px;
+  }
+  footer h3 {
+    padding-bottom: 0;
+    padding-right: 42.1px;
+    margin-bottom: 30px;
+  }
+  footer .footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
