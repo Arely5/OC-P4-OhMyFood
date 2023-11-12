@@ -362,6 +362,7 @@ section {
 .card {
   position: relative;
   width: 100%;
+  max-width: 490px;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
@@ -370,8 +371,8 @@ section {
   position: absolute;
   width: 80px;
   height: 29px;
-  top: 42px;
-  left: 250px;
+  top: 13px;
+  right: 17.29px;
   display: flex;
   background-color: var(--green);
   color: var(--green-font);
@@ -565,10 +566,42 @@ section {
   }
   .fonctionnement {
     height: 228.38px;
+    padding-left: 180px;
+    width: 100%;
+  }
+  .fonctionnement h2 {
+    padding-left: 0;
+    width: 275px;
   }
   .fonctionnement .steps-wrapper {
     display: flex;
     flex-direction: row;
+    gap: 30px;
+    padding-left: 0;
+    max-width: 1050px;
+  }
+  .fonctionnement .steps-wrapper .step {
+    width: 335px;
+  }
+  .restaurants {
+    padding-left: 180px;
+    height: 700px;
+  }
+  .restaurants h2 {
+    width: 268px;
+    padding-left: 0;
+  }
+  .restaurants .cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    row-gap: 50px;
+    justify-content: flex-start;
+    width: 1080px;
+  }
+  .restaurants a, .restaurants card {
+    width: 490px;
   }
   footer {
     display: flex;

@@ -17,12 +17,51 @@
 
     .fonctionnement {
         height: 228.38px;
+        padding-left: 180px;
+        width: 100%;
+
+        h2 {
+            
+            padding-left: 0;
+            width: 275px;
+        }
 
         .steps-wrapper {
             display: flex;
             flex-direction: row;
+            gap: 30px;
+            padding-left: 0;
+            max-width: 1050px;
+
+            .step {
+                width: 335px;
+            }
         }
 
+    }
+
+    .restaurants {
+        padding-left: 180px;
+        height: 700px;
+
+        h2 {
+            width: 268px;
+            padding-left: 0;
+        }
+        
+        .cards-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 100px;
+            row-gap: 50px;
+            justify-content: flex-start;
+            width: 1080px;
+        }
+
+        a, card {
+            width: 490px;
+        }
     }
     
     footer {

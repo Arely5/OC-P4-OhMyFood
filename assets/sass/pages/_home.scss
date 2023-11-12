@@ -120,6 +120,7 @@ section {
 .card {
     position: relative;
     width: 100%;
+    max-width: 490px;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -128,8 +129,8 @@ section {
         position: absolute;
         width: 80px;
         height: 29px;
-        top: 42px;
-        left: 250px;
+        top: 13px;
+        right: 17.29px;
         display: flex;
         background-color: var(--green);
         color: var(--green-font);
