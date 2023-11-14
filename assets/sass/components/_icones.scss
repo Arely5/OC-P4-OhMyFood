@@ -20,16 +20,15 @@
     font-size: 20px;
 }
 
-.solid-heart {
+.fa-heart {
     font-size: 23px;
-    font-weight: 500;
     background: black;
     background-clip: text;
     color: transparent;
 
     &:hover {
         font-weight: 800;
-        background: var(--pink-gradient);
+        background: var(--inversed-pink-gradient);
         background-clip: text;
         color: transparent;
     }

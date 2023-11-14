@@ -16,20 +16,22 @@
     }
 
     .fonctionnement {
+        display: flex;
+        flex-direction: column;
         height: 228.38px;
-        padding-left: 180px;
-        width: 100%;
+        padding-left: 0;
 
         h2 {
             
             padding-left: 0;
             width: 275px;
+            margin-right: 810px;
         }
 
         .steps-wrapper {
             display: flex;
             flex-direction: row;
-            gap: 30px;
+            gap: 35px;
             padding-left: 0;
             max-width: 1050px;
 
@@ -41,12 +43,15 @@
     }
 
     .restaurants {
-        padding-left: 180px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
         height: 700px;
 
         h2 {
             width: 268px;
             padding-left: 0;
+            margin-right: 810px;
         }
         
         .cards-wrapper {

@@ -14,6 +14,7 @@ html, body {
     --green-font: #008766;
     --white: #fff;
     --pink-gradient: linear-gradient(#FF79DA -27%, var(--primary-color) 123.93%);
+    --inversed-pink-gradient: linear-gradient(var(--primary-color) -27%, #FF79DA 123.93%);
 }
 
 /*TYPOGRAPHIE*/

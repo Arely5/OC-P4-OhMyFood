@@ -15,6 +15,7 @@ html, body {
   --green-font: #008766;
   --white: #fff;
   --pink-gradient: linear-gradient(#FF79DA -27%, var(--primary-color) 123.93%);
+  --inversed-pink-gradient: linear-gradient(var(--primary-color) -27%, #FF79DA 123.93%);
 }
 
 /*TYPOGRAPHIE*/
@@ -147,17 +148,16 @@ ul {
   font-size: 20px;
 }
 
-.solid-heart {
+.fa-heart {
   font-size: 23px;
-  font-weight: 500;
   background: black;
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
 }
-.solid-heart:hover {
+.fa-heart:hover {
   font-weight: 800;
-  background: var(--pink-gradient);
+  background: var(--inversed-pink-gradient);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
@@ -172,35 +172,6 @@ ul {
   font-size: 13px;
 }
 
-/*HEART
-.heart {
-    position: absolute;
-    right: 33px;
-    width: 17px;
-    height: 24px;
-
-    &::before, &::after {
-        position: absolute;
-        top: 0;
-        content: "";
-        background: var(--pink-gradient);
-        border-radius: 50px 50px 0 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    &::before {
-        left: 17px;
-        transform: rotate(-50deg);
-        transform-origin: 0 100%;
-    }
-
-    &::after {
-        left: 0;
-        transform: rotate(50deg);
-        transform-origin: 100% 100%;
-    }
-}*/
 /*HEADER*/
 header .img-container {
   display: flex;
@@ -606,18 +577,20 @@ section {
     margin: 0;
   }
   .fonctionnement {
+    display: flex;
+    flex-direction: column;
     height: 228.38px;
-    padding-left: 180px;
-    width: 100%;
+    padding-left: 0;
   }
   .fonctionnement h2 {
     padding-left: 0;
     width: 275px;
+    margin-right: 810px;
   }
   .fonctionnement .steps-wrapper {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 35px;
     padding-left: 0;
     max-width: 1050px;
   }
@@ -625,12 +598,15 @@ section {
     width: 335px;
   }
   .restaurants {
-    padding-left: 180px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
     height: 700px;
   }
   .restaurants h2 {
     width: 268px;
     padding-left: 0;
+    margin-right: 810px;
   }
   .restaurants .cards-wrapper {
     display: flex;
