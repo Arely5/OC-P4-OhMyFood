@@ -96,6 +96,48 @@ ul {
     visibility: hidden;
   }
 }
+@keyframes arrivee-entrees {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  67% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes arrivee-plats {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes arrivee-desserts {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* BUTTONS */
 .btn {
   width: 186px;
@@ -112,11 +154,17 @@ ul {
   line-height: 19px;
   color: white;
   text-decoration: none;
+  transition-duration: 0.5s;
 }
 
 .btn:hover {
   cursor: pointer;
   filter: brightness(110%);
+  box-shadow: 1px 5px 11px 1px rgba(0, 0, 0, 0.25);
+}
+
+.btn:hover:not(:hover) {
+  filter: brightness(0);
 }
 
 .first-btn {
@@ -557,6 +605,15 @@ section {
   height: 69px;
   z-index: 5;
   transition: width 0.5s ease;
+}
+.menu-wraper .menu .entrees {
+  animation: arrivee-entrees 3s ease-in;
+}
+.menu-wraper .menu .plats {
+  animation: arrivee-plats 3s ease-in;
+}
+.menu-wraper .menu .desserts {
+  animation: arrivee-desserts 3s ease-in;
 }
 .menu-wraper .menu .btn {
   margin: 0 0 40px 0;
