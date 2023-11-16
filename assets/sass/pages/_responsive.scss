@@ -1,7 +1,6 @@
 /*RESPONSIVE*/
 @media screen and (min-width: 1280px) {
     .title-section {
-        padding-top: 30px;
         padding-bottom: 30px;
         
         h1 {
@@ -17,58 +16,54 @@
 
     .fonctionnement {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         height: 228.38px;
-        padding-left: 0;
 
-        h2 {
-            
-            padding-left: 0;
-            width: 275px;
-            margin-right: 810px;
-        }
-
-        .steps-wrapper {
+        .fonctionnement-wrapper {
             display: flex;
-            flex-direction: row;
-            gap: 35px;
-            padding-left: 0;
-            max-width: 1050px;
+            flex-direction: column;
 
-            .step {
-                width: 335px;
+            h2 {
+                width: 1080px;
+            }
+    
+            .steps-wrapper {
+                display: flex;
+                flex-direction: row;
+                gap: 35px;
+                padding-left: 0;
+                max-width: 1050px;
+    
+                .step {
+                    width: 335px;
+                }
             }
         }
-
     }
 
     .restaurants {
-        display: flex;
-        flex-direction: column;
-        padding-left: 0;
         height: 700px;
 
-        h2 {
-            width: 268px;
-            padding-left: 0;
-            margin-right: 810px;
-        }
-        
-        .cards-wrapper {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 100px;
-            row-gap: 50px;
-            justify-content: flex-start;
-            width: 1080px;
-        }
+        .restaurants-wrapper {
+            
+            h2 {
+                width: 1080px;
+            }
+            
+            .cards-wrapper {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 100px;
+                row-gap: 50px;
+                width: 1080px;
 
-        a, card {
-            width: 490px;
+                a, .card {
+                    width: 490px;
+                }
+            }
         }
     }
-    
+
     footer {
         display: flex;
         flex-direction: row-reverse;
@@ -78,8 +73,7 @@
         height: 114px;
         padding: 0 25px 0 25px;
 
-        h3 {
-            padding-bottom: 0;
+        .footer-logo {
             padding-right: 42.1px;
             margin-bottom: 30px;
         }
@@ -89,6 +83,14 @@
             flex-direction: row;
             gap: 7px;
             margin-bottom: 30px;
+        }
+    }
+
+    .menu {
+        width: 1055px;
+
+        .menu-element {
+            width: 634px;
         }
     }
 }
