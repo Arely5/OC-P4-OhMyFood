@@ -576,19 +576,25 @@ section {
   height: 27px;
   border-bottom: solid 3px var(--green);
 }
-.menu-wraper .menu .menu-element .card-wraper {
+.menu-wraper .menu .menu-element .menu-card-wrapper {
   position: relative;
   display: flex;
   flex-direction: row;
 }
-.menu-wraper .menu .menu-element .card-wraper:hover .check {
+.menu-wraper .menu .menu-element .menu-card-wrapper:hover .check {
   visibility: visible;
   width: 59px;
 }
-.menu-wraper .menu .menu-element .card-wraper:hover .carte-plat {
+.menu-wraper .menu .menu-element .menu-card-wrapper:hover .carte-plat {
   padding-right: 74px;
 }
-.menu-wraper .menu .menu-element .card-wraper .carte-plat {
+.menu-wraper .menu .menu-element .menu-card-wrapper:hover .coupure {
+  display: inline;
+}
+.menu-wraper .menu .menu-element .menu-card-wrapper:hover .txt-coupure {
+  display: none;
+}
+.menu-wraper .menu .menu-element .menu-card-wrapper .carte-plat {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -601,7 +607,7 @@ section {
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
   transition: padding-right 0.5s ease;
 }
-.menu-wraper .menu .menu-element .card-wraper .carte-plat .carte-plat-infos {
+.menu-wraper .menu .menu-element .menu-card-wrapper .carte-plat .carte-plat-infos {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -609,12 +615,16 @@ section {
   font-weight: 300;
   line-height: 18px;
 }
-.menu-wraper .menu .menu-element .card-wraper .carte-plat .price {
+.menu-wraper .menu .menu-element .menu-card-wrapper .carte-plat .price {
+  position: relative;
   font-size: 15px;
   font-weight: 700;
   line-height: 18px;
 }
-.menu-wraper .menu .menu-element .card-wraper .check {
+.menu-wraper .menu .menu-element .menu-card-wrapper .coupure {
+  display: none;
+}
+.menu-wraper .menu .menu-element .menu-card-wrapper .check {
   visibility: hidden;
   position: absolute;
   right: 0;
@@ -625,7 +635,6 @@ section {
   border-radius: 0 15.04px 15.04px 0;
   width: 0;
   height: 69px;
-  z-index: 5;
   transition: width 0.5s ease;
 }
 .menu-wraper .menu .entrees {

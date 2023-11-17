@@ -68,7 +68,7 @@
                 border-bottom: solid 3px var(--green);
             }
 
-            .card-wraper{
+            .menu-card-wrapper{
                 position: relative;
                 display: flex;
                 flex-direction: row;
@@ -80,6 +80,14 @@
 
                 &:hover .carte-plat {
                     padding-right: 74px;
+                }
+
+                &:hover .coupure {
+                    display: inline;
+                }
+
+                &:hover .txt-coupure {
+                    display: none;
                 }
 
                 .carte-plat {
@@ -105,10 +113,15 @@
                     }
                     
                     .price {
+                        position: relative;
                         font-size: 15px;
                         font-weight: 700;
                         line-height: 18px;
                     }
+                }
+
+                .coupure {
+                    display: none;
                 }
 
                 .check {
@@ -122,7 +135,6 @@
                     border-radius: 0 15.04px 15.04px 0;
                     width: 0;
                     height: 69px;
-                    z-index: 5;
                     transition: width 0.5s ease;
                 }
             }
