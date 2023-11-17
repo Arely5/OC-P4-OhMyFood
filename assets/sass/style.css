@@ -585,8 +585,8 @@ section {
   visibility: visible;
   width: 59px;
 }
-.menu-wraper .menu .menu-element .menu-card-wrapper:hover .carte-plat {
-  padding-right: 74px;
+.menu-wraper .menu .menu-element .menu-card-wrapper:hover .price {
+  right: 50px;
 }
 .menu-wraper .menu .menu-element .menu-card-wrapper:hover .coupure {
   display: inline;
@@ -605,7 +605,6 @@ section {
   background-color: var(--white);
   padding: 0 15px 0 15px;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
-  transition: padding-right 0.5s ease;
 }
 .menu-wraper .menu .menu-element .menu-card-wrapper .carte-plat .carte-plat-infos {
   display: flex;
@@ -635,7 +634,7 @@ section {
   border-radius: 0 15.04px 15.04px 0;
   width: 0;
   height: 69px;
-  transition: width 0.5s ease;
+  transition: all 0.5s ease-out;
 }
 .menu-wraper .menu .entrees {
   animation: arrivee-entrees 3s ease-in;

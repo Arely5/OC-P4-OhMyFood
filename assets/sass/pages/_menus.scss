@@ -78,8 +78,8 @@
                     width: 59px;
                 }
 
-                &:hover .carte-plat {
-                    padding-right: 74px;
+                &:hover .price {
+                    right: 50px;
                 }
 
                 &:hover .coupure {
@@ -101,7 +101,6 @@
                     background-color: var(--white);
                     padding: 0 15px 0 15px;
                     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
-                    transition: padding-right 0.5s ease;
 
                     .carte-plat-infos {
                         display: flex;
@@ -135,7 +134,7 @@
                     border-radius: 0 15.04px 15.04px 0;
                     width: 0;
                     height: 69px;
-                    transition: width 0.5s ease;
+                    transition: all .5s ease-out;
                 }
             }
         }
