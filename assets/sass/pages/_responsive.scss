@@ -94,3 +94,23 @@
         }
     }
 }
+
+@media screen and (max-width: 374px) {
+    .fonctionnement-wrapper {
+        h2 {
+            max-width: 290px;
+        }
+        .step {
+            max-width: 290px;
+        }
+    }
+
+    .restaurants-wrapper {
+        h2 {
+            max-width: 290px;
+        }
+        .cards-wrapper {
+            max-width: 290px;
+        }
+    }
+}

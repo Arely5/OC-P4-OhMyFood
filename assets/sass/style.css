@@ -725,4 +725,18 @@ section {
   .menu .menu-element {
     width: 634px;
   }
+}
+@media screen and (max-width: 374px) {
+  .fonctionnement-wrapper h2 {
+    max-width: 290px;
+  }
+  .fonctionnement-wrapper .step {
+    max-width: 290px;
+  }
+  .restaurants-wrapper h2 {
+    max-width: 290px;
+  }
+  .restaurants-wrapper .cards-wrapper {
+    max-width: 290px;
+  }
 }/*# sourceMappingURL=style.css.map */
