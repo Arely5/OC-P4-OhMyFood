@@ -20,35 +20,35 @@ html, body {
 /*TYPOGRAPHIE*/
 @font-face {
   font-family: "Shrikhand";
-  src: url("/assets/font/Shrikhand/Shrikhand-Regular.woff2") format("woff2"), url("/assets/font/Shrikhand/Shrikhand-Regular.woff") format("woff");
+  src: url("../font/Shrikhand/Shrikhand-Regular.woff2") format("woff2"), url("../font/Shrikhand/Shrikhand-Regular.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("/assets/font/Roboto/Roboto-Bold.woff2") format("woff2"), url("/assets/font/Roboto/Roboto-Bold.woff") format("woff");
+  src: url("../font/Roboto/Roboto-Bold.woff2") format("woff2"), url("../font/Roboto/Roboto-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("/assets/font/Roboto/Roboto-Light.woff2") format("woff2"), url("/assets/font/Roboto/Roboto-Light.woff") format("woff");
+  src: url("../font/Roboto/Roboto-Light.woff2") format("woff2"), url("../font/Roboto/Roboto-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("/assets/font/Roboto/Roboto-Medium.woff2") format("woff2"), url("/assets/font/Roboto/Roboto-Medium.woff") format("woff");
+  src: url("../font/Roboto/Roboto-Medium.woff2") format("woff2"), url("../font/Roboto/Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("/assets/font/Roboto/Roboto-Regular.woff2") format("woff2"), url("/assets/font/Roboto/Roboto-Regular.woff") format("woff");
+  src: url("../font/Roboto/Roboto-Regular.woff2") format("woff2"), url("../font/Roboto/Roboto-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
