@@ -20,15 +20,31 @@
     font-size: 20px;
 }
 
-.fa-heart {
-    font-size: 23px;
-    color: black;
+.hearts-wrap {
+    position: relative;
+    width: 23px;
+    height: 23px;
 
-    &:hover {
+    &:hover .second-heart {
         font-weight: 800;
         background: var(--inversed-pink-gradient);
         background-clip: text;
         color: transparent;
+    }
+
+    &:hover .first-heart {
+        opacity: 0;
+    }
+
+    .fa-heart {
+        font-size: 23px;
+        color: black;
+    }
+
+    .first-heart {
+        position: absolute;
+        top: 0;
+        transition: all 0.5s ease-out;
     }
 }
 

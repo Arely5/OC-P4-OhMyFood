@@ -195,16 +195,29 @@ ul {
   font-size: 20px;
 }
 
-.fa-heart {
-  font-size: 23px;
-  color: black;
+.hearts-wrap {
+  position: relative;
+  width: 23px;
+  height: 23px;
 }
-.fa-heart:hover {
+.hearts-wrap:hover .second-heart {
   font-weight: 800;
   background: var(--inversed-pink-gradient);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
+}
+.hearts-wrap:hover .first-heart {
+  opacity: 0;
+}
+.hearts-wrap .fa-heart {
+  font-size: 23px;
+  color: black;
+}
+.hearts-wrap .first-heart {
+  position: absolute;
+  top: 0;
+  transition: all 0.5s ease-out;
 }
 
 .fa-circle-check {
@@ -533,6 +546,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 307px;
   font-family: Shrikhand;
 }
