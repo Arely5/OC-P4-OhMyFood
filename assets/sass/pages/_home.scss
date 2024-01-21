@@ -77,7 +77,7 @@ section {
             font-weight: 700;
             line-height: 28px;
             padding: 48px 0 26px;
-            width: 335px;
+            width: 320px;
         }
     
         .steps-wrapper {
@@ -90,7 +90,7 @@ section {
             display: flex;
             flex-direction: row;
             gap: 23px;
-            width: 335px;
+            min-width: 305px;
             height: 72.38px;
             align-items: center;
             background-color: var(--background);
@@ -98,6 +98,8 @@ section {
             border-radius: 20px;
     
             .number-step {
+                position: relative;
+                left: 5px;
                 display: flex;
                 background-color: var(--primary-color);
                 height: 24px;
@@ -140,11 +142,11 @@ section {
             font-weight: 700;
             line-height: 28px;
             padding: 48px 0 23px;
-            width: 340px;
+            width: 320px;
         }
 
         .cards-wrapper {
-            width: 340px;
+            width: 320px;
             display: flex;
             flex-direction: column;
             gap: 18px;

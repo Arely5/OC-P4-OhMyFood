@@ -366,7 +366,7 @@ section {
   font-weight: 700;
   line-height: 28px;
   padding: 48px 0 26px;
-  width: 335px;
+  width: 320px;
 }
 .fonctionnement .fonctionnement-wrapper .steps-wrapper {
   display: flex;
@@ -377,7 +377,7 @@ section {
   display: flex;
   flex-direction: row;
   gap: 23px;
-  width: 335px;
+  min-width: 305px;
   height: 72.38px;
   align-items: center;
   background-color: var(--background);
@@ -385,6 +385,8 @@ section {
   border-radius: 20px;
 }
 .fonctionnement .fonctionnement-wrapper .step .number-step {
+  position: relative;
+  left: 5px;
   display: flex;
   background-color: var(--primary-color);
   height: 24px;
@@ -423,10 +425,10 @@ section {
   font-weight: 700;
   line-height: 28px;
   padding: 48px 0 23px;
-  width: 340px;
+  width: 320px;
 }
 .restaurants .restaurants-wrapper .cards-wrapper {
-  width: 340px;
+  width: 320px;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -565,7 +567,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  min-width: 349px;
+  min-width: 320px;
   max-width: 634px;
   font-family: "Roboto";
 }
@@ -736,17 +738,8 @@ section {
     width: 634px;
   }
 }
-@media screen and (max-width: 374px) {
-  .fonctionnement-wrapper h2 {
-    max-width: 290px;
-  }
-  .fonctionnement-wrapper .step {
-    max-width: 290px;
-  }
-  .restaurants-wrapper h2 {
-    max-width: 290px;
-  }
-  .restaurants-wrapper .cards-wrapper {
-    max-width: 290px;
+@media screen and (min-width: 374px) {
+  .menu .menu-element {
+    min-width: 349px;
   }
 }/*# sourceMappingURL=style.css.map */

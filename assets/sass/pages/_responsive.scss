@@ -90,27 +90,13 @@
         width: 1055px;
 
         .menu-element {
-            width: 634px;
+           width: 634px;
         }
     }
 }
 
-@media screen and (max-width: 374px) {
-    .fonctionnement-wrapper {
-        h2 {
-            max-width: 290px;
-        }
-        .step {
-            max-width: 290px;
-        }
-    }
-
-    .restaurants-wrapper {
-        h2 {
-            max-width: 290px;
-        }
-        .cards-wrapper {
-            max-width: 290px;
-        }
+@media screen and (min-width: 374px) {
+    .menu .menu-element {
+        min-width: 349px;
     }
 }
